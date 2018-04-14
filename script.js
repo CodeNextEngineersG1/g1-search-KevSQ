@@ -5,7 +5,7 @@ NOTE: A song may consist of multiple beatmaps, not just one.All objects apply so
 osu! taiko 
 osu! mania
 osu! catch. 
-*/
+*/x
 
 var database = {
 	name: "Vanic - Samurai (Spirix Remix)", //Name of song being categorized
@@ -39,7 +39,6 @@ var database = {
 	length: "2:58",
 	difficulty: ["Easy", "Normal", "Hard"], 
 	stars: [1.27, 1.7, 3.2]
-},
 {
 	name: "Yousei Teikoku - Kokou no Sousei",
 	mapper: "Saten-san",
@@ -48,3 +47,15 @@ var database = {
 	difficulty: ["Hard", "Insane", "Collab", "Chaos"],
 	stars: [2.87, 4.53, 5.40, 6.10]
 }
+
+var searchBar = document.getElementById("search-bar"),
+searchButton = document.getElementById("search-button"),
+autoSuggestions = document.getElementById("auto-suggest"),
+display = document.getElementById("display");
+
+searchBar.addEventListener("keypress", checkKey);
+searchButton.addEventListener("click", processInput);
+
+
+
+

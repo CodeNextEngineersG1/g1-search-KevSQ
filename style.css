@@ -11,3 +11,13 @@ body {
 }
 
 /* place your styles below */
+
+#search {
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+#display {
+	
+}
